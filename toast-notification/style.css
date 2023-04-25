@@ -1,0 +1,59 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.btn {
+  background-color: wheat;
+  color: darkmagenta;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+#toasts {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.toast {
+  background-color: wheat;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+}
+
+.toast.info {
+  color: aqua;
+}
+
+.toast.success {
+  color: lime;
+}
+
+.toast.error {
+  color: red;
+}
